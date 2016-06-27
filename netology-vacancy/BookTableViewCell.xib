@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookTableViewCell" rowHeight="121" id="5I8-mc-dAD" customClass="BookTableViewCell" customModule="netology_vacancy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5I8-mc-dAD" id="2af-Gz-S5L">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fuh-H4-gIQ">
+                        <rect key="frame" x="8" y="8" width="92" height="92"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="92" id="Hdf-1y-WQJ"/>
+                            <constraint firstAttribute="width" constant="92" id="MIN-FL-2vg"/>
+                            <constraint firstAttribute="height" constant="92" id="WDL-bV-dcu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Hdf-1y-WQJ"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efu-d0-swd">
+                        <rect key="frame" x="108" y="10" width="204" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authors" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FK5-I7-D2N">
+                        <rect key="frame" x="108" y="31" width="204" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="efu-d0-swd" firstAttribute="leading" secondItem="Fuh-H4-gIQ" secondAttribute="trailing" constant="8" id="8F3-QY-UjM"/>
+                    <constraint firstItem="FK5-I7-D2N" firstAttribute="top" secondItem="efu-d0-swd" secondAttribute="bottom" constant="3" id="BYI-jS-pLO"/>
+                    <constraint firstItem="FK5-I7-D2N" firstAttribute="trailing" secondItem="efu-d0-swd" secondAttribute="trailing" id="Gka-3U-HW1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="efu-d0-swd" secondAttribute="trailing" id="QKU-DW-Loy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="FK5-I7-D2N" secondAttribute="bottom" constant="53.5" id="Rja-ld-hTe"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="Fuh-H4-gIQ" secondAttribute="leading" id="Sxb-9z-saj"/>
+                    <constraint firstItem="Fuh-H4-gIQ" firstAttribute="top" secondItem="2af-Gz-S5L" secondAttribute="topMargin" id="Ts9-YL-j9M"/>
+                    <constraint firstItem="FK5-I7-D2N" firstAttribute="leading" secondItem="efu-d0-swd" secondAttribute="leading" id="XxH-4E-86t"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="FK5-I7-D2N" secondAttribute="bottom" id="b4A-qi-6Pq"/>
+                    <constraint firstItem="efu-d0-swd" firstAttribute="top" secondItem="2af-Gz-S5L" secondAttribute="topMargin" constant="2" id="u81-2A-cix"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Fuh-H4-gIQ" secondAttribute="bottom" priority="500" id="vZU-wY-UME"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Rja-ld-hTe"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bookAuthorsLabel" destination="FK5-I7-D2N" id="H1K-n9-gB4"/>
+                <outlet property="bookThumbnailImageView" destination="Fuh-H4-gIQ" id="vvg-xu-AgW"/>
+                <outlet property="bookTitleLabel" destination="efu-d0-swd" id="Tlo-Mt-uRc"/>
+            </connections>
+            <point key="canvasLocation" x="439" y="329.5"/>
+        </tableViewCell>
+    </objects>
+</document>

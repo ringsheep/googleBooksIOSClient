@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BBB66A99F3CC8AFFA5CFD63 /* Pods_netology_vacancy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46DDA112BE2A51F598EDEE7B /* Pods_netology_vacancy.framework */; };
+		8FC95AA3B0493FAE8FDA44D4 /* Pods_netology_vacancyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9760205BD6B0792272BE7C07 /* Pods_netology_vacancyUITests.framework */; };
+		9975F34B1D1FEE3300B3F3DB /* CalendarUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975F34A1D1FEE3300B3F3DB /* CalendarUtils.swift */; };
+		9975F34E1D20186700B3F3DB /* BookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9975F34D1D20186700B3F3DB /* BookTableViewCell.xib */; };
+		9975F3501D2019DB00B3F3DB /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975F34F1D2019DB00B3F3DB /* BookTableViewCell.swift */; };
+		9975F3551D205E2100B3F3DB /* BooksListTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975F3541D205E2100B3F3DB /* BooksListTableViewControllerTests.swift */; };
+		9975F3581D20998900B3F3DB /* BookDetalisationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975F3571D20998900B3F3DB /* BookDetalisationViewController.swift */; };
+		9975F35A1D21C6CF00B3F3DB /* BookDetalisationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975F3591D21C6CF00B3F3DB /* BookDetalisationProtocol.swift */; };
+		9975F35C1D21CC7D00B3F3DB /* BooksSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975F35B1D21CC7D00B3F3DB /* BooksSplitViewController.swift */; };
+		99CB5A2D1D1E9A090016C832 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB5A2C1D1E9A090016C832 /* AppDelegate.swift */; };
+		99CB5A321D1E9A090016C832 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99CB5A301D1E9A090016C832 /* Main.storyboard */; };
+		99CB5A351D1E9A090016C832 /* netology_vacancy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99CB5A331D1E9A090016C832 /* netology_vacancy.xcdatamodeld */; };
+		99CB5A371D1E9A090016C832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99CB5A361D1E9A090016C832 /* Assets.xcassets */; };
+		99CB5A3A1D1E9A090016C832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99CB5A381D1E9A090016C832 /* LaunchScreen.storyboard */; };
+		99CB5A501D1E9A090016C832 /* netology_vacancyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB5A4F1D1E9A090016C832 /* netology_vacancyUITests.swift */; };
+		99CB5A5F1D1E9E570016C832 /* BooksListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB5A5E1D1E9E570016C832 /* BooksListTableViewController.swift */; };
+		99CB5A611D1EA5520016C832 /* TableViewDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB5A601D1EA5520016C832 /* TableViewDataProviderProtocol.swift */; };
+		99CB5A631D1EA88D0016C832 /* BooksListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB5A621D1EA88D0016C832 /* BooksListDataProvider.swift */; };
+		99CB5A671D1EB2A50016C832 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB5A661D1EB2A50016C832 /* Book.swift */; };
+		99CB5A6A1D1EB53E0016C832 /* BookFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB5A691D1EB53E0016C832 /* BookFabric.swift */; };
+		99CB5A6D1D1EB9750016C832 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB5A6C1D1EB9750016C832 /* Author.swift */; };
+		99CB5A6F1D1EBBFE0016C832 /* AuthorsFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CB5A6E1D1EBBFE0016C832 /* AuthorsFabric.swift */; };
+		99FEC7451D1ED5C200EC52EF /* APIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FEC7441D1ED5C200EC52EF /* APIWrapper.swift */; };
+		99FEC7481D1ED90500EC52EF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FEC7471D1ED90500EC52EF /* Constants.swift */; };
+		99FEC74A1D1EDED700EC52EF /* BooksFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FEC7491D1EDED700EC52EF /* BooksFacade.swift */; };
+		99FEC74C1D1EE3BF00EC52EF /* EntityFacadeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FEC74B1D1EE3BF00EC52EF /* EntityFacadeProtocol.swift */; };
+		99FEC74E1D1EE5E200EC52EF /* CoreDataDownloadAndInsertOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FEC74D1D1EE5E200EC52EF /* CoreDataDownloadAndInsertOperation.swift */; };
+		99FEC7511D1EF92100EC52EF /* NSDictionaryUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FEC7501D1EF92100EC52EF /* NSDictionaryUtils.swift */; };
+		99FEC7531D1F0F2100EC52EF /* ConcreteParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FEC7521D1F0F2100EC52EF /* ConcreteParserProtocol.swift */; };
+		99FEC7561D1F161D00EC52EF /* BooksConcreteParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FEC7551D1F161D00EC52EF /* BooksConcreteParser.swift */; };
+		C6AC4272333142D7511D3BD1 /* Pods_netology_vacancyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508420B66E31A3237EB5CCC4 /* Pods_netology_vacancyTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99CB5A411D1E9A090016C832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99CB5A211D1E9A090016C832 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99CB5A281D1E9A090016C832;
+			remoteInfo = "netology-vacancy";
+		};
+		99CB5A4C1D1E9A090016C832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99CB5A211D1E9A090016C832 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99CB5A281D1E9A090016C832;
+			remoteInfo = "netology-vacancy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		441B4B459B8CA99D6DB4BB8E /* Pods-netology-vacancyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netology-vacancyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-netology-vacancyUITests/Pods-netology-vacancyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		46DDA112BE2A51F598EDEE7B /* Pods_netology_vacancy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_netology_vacancy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		508420B66E31A3237EB5CCC4 /* Pods_netology_vacancyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_netology_vacancyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56265432836ABBEB50BEBA31 /* Pods-netology-vacancy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netology-vacancy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-netology-vacancy/Pods-netology-vacancy.debug.xcconfig"; sourceTree = "<group>"; };
+		6B858CE6C0002A9366A256A0 /* Pods-netology-vacancy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netology-vacancy.release.xcconfig"; path = "Pods/Target Support Files/Pods-netology-vacancy/Pods-netology-vacancy.release.xcconfig"; sourceTree = "<group>"; };
+		78E85FB8C34EE32CF6A8C726 /* Pods-netology-vacancyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netology-vacancyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-netology-vacancyTests/Pods-netology-vacancyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9760205BD6B0792272BE7C07 /* Pods_netology_vacancyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_netology_vacancyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9975F34A1D1FEE3300B3F3DB /* CalendarUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarUtils.swift; sourceTree = "<group>"; };
+		9975F34D1D20186700B3F3DB /* BookTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookTableViewCell.xib; sourceTree = "<group>"; };
+		9975F34F1D2019DB00B3F3DB /* BookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		9975F3511D201BA500B3F3DB /* netology-vacancy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "netology-vacancy-Bridging-Header.h"; sourceTree = "<group>"; };
+		9975F3541D205E2100B3F3DB /* BooksListTableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksListTableViewControllerTests.swift; sourceTree = "<group>"; };
+		9975F3571D20998900B3F3DB /* BookDetalisationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetalisationViewController.swift; sourceTree = "<group>"; };
+		9975F3591D21C6CF00B3F3DB /* BookDetalisationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetalisationProtocol.swift; sourceTree = "<group>"; };
+		9975F35B1D21CC7D00B3F3DB /* BooksSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksSplitViewController.swift; sourceTree = "<group>"; };
+		99CB5A291D1E9A090016C832 /* netology-vacancy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "netology-vacancy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99CB5A2C1D1E9A090016C832 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		99CB5A311D1E9A090016C832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99CB5A341D1E9A090016C832 /* netology_vacancy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = netology_vacancy.xcdatamodel; sourceTree = "<group>"; };
+		99CB5A361D1E9A090016C832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99CB5A391D1E9A090016C832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99CB5A3B1D1E9A090016C832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99CB5A401D1E9A090016C832 /* netology-vacancyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "netology-vacancyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99CB5A461D1E9A090016C832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99CB5A4B1D1E9A090016C832 /* netology-vacancyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "netology-vacancyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99CB5A4F1D1E9A090016C832 /* netology_vacancyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = netology_vacancyUITests.swift; sourceTree = "<group>"; };
+		99CB5A511D1E9A090016C832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99CB5A5E1D1E9E570016C832 /* BooksListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksListTableViewController.swift; sourceTree = "<group>"; };
+		99CB5A601D1EA5520016C832 /* TableViewDataProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataProviderProtocol.swift; sourceTree = "<group>"; };
+		99CB5A621D1EA88D0016C832 /* BooksListDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksListDataProvider.swift; sourceTree = "<group>"; };
+		99CB5A661D1EB2A50016C832 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		99CB5A691D1EB53E0016C832 /* BookFabric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookFabric.swift; sourceTree = "<group>"; };
+		99CB5A6C1D1EB9750016C832 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		99CB5A6E1D1EBBFE0016C832 /* AuthorsFabric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorsFabric.swift; sourceTree = "<group>"; };
+		99FEC7441D1ED5C200EC52EF /* APIWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIWrapper.swift; sourceTree = "<group>"; };
+		99FEC7471D1ED90500EC52EF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		99FEC7491D1EDED700EC52EF /* BooksFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksFacade.swift; sourceTree = "<group>"; };
+		99FEC74B1D1EE3BF00EC52EF /* EntityFacadeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityFacadeProtocol.swift; sourceTree = "<group>"; };
+		99FEC74D1D1EE5E200EC52EF /* CoreDataDownloadAndInsertOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataDownloadAndInsertOperation.swift; sourceTree = "<group>"; };
+		99FEC7501D1EF92100EC52EF /* NSDictionaryUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDictionaryUtils.swift; sourceTree = "<group>"; };
+		99FEC7521D1F0F2100EC52EF /* ConcreteParserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreteParserProtocol.swift; sourceTree = "<group>"; };
+		99FEC7551D1F161D00EC52EF /* BooksConcreteParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksConcreteParser.swift; sourceTree = "<group>"; };
+		B4A26C565DB169B3E119E5CF /* Pods-netology-vacancyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netology-vacancyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-netology-vacancyTests/Pods-netology-vacancyTests.release.xcconfig"; sourceTree = "<group>"; };
+		CEB7C0A75A4D1EE9637C363D /* Pods-netology-vacancyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-netology-vacancyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-netology-vacancyUITests/Pods-netology-vacancyUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99CB5A261D1E9A090016C832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBB66A99F3CC8AFFA5CFD63 /* Pods_netology_vacancy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CB5A3D1D1E9A090016C832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6AC4272333142D7511D3BD1 /* Pods_netology_vacancyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CB5A481D1E9A090016C832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC95AA3B0493FAE8FDA44D4 /* Pods_netology_vacancyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DF814A6C31BC1C7D75A85DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46DDA112BE2A51F598EDEE7B /* Pods_netology_vacancy.framework */,
+				508420B66E31A3237EB5CCC4 /* Pods_netology_vacancyTests.framework */,
+				9760205BD6B0792272BE7C07 /* Pods_netology_vacancyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9975F34C1D20184B00B3F3DB /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				9975F34D1D20186700B3F3DB /* BookTableViewCell.xib */,
+				9975F34F1D2019DB00B3F3DB /* BookTableViewCell.swift */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		9975F3561D20993200B3F3DB /* BookDetalisation */ = {
+			isa = PBXGroup;
+			children = (
+				9975F3571D20998900B3F3DB /* BookDetalisationViewController.swift */,
+			);
+			name = BookDetalisation;
+			sourceTree = "<group>";
+		};
+		99CB5A201D1E9A090016C832 = {
+			isa = PBXGroup;
+			children = (
+				99CB5A2B1D1E9A090016C832 /* netology-vacancy */,
+				99CB5A431D1E9A090016C832 /* netology-vacancyTests */,
+				99CB5A4E1D1E9A090016C832 /* netology-vacancyUITests */,
+				99CB5A2A1D1E9A090016C832 /* Products */,
+				BF8EA9F133849ABF1F3D2254 /* Pods */,
+				1DF814A6C31BC1C7D75A85DC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		99CB5A2A1D1E9A090016C832 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99CB5A291D1E9A090016C832 /* netology-vacancy.app */,
+				99CB5A401D1E9A090016C832 /* netology-vacancyTests.xctest */,
+				99CB5A4B1D1E9A090016C832 /* netology-vacancyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99CB5A2B1D1E9A090016C832 /* netology-vacancy */ = {
+			isa = PBXGroup;
+			children = (
+				9975F34C1D20184B00B3F3DB /* Custom Views */,
+				99FEC7461D1ED8EF00EC52EF /* Helper files */,
+				99CB5A741D1EC9FD0016C832 /* Abstract */,
+				99CB5A641D1EA9850016C832 /* Data */,
+				99CB5A651D1EA9A20016C832 /* Controllers */,
+				99CB5A2C1D1E9A090016C832 /* AppDelegate.swift */,
+				99CB5A301D1E9A090016C832 /* Main.storyboard */,
+				99CB5A361D1E9A090016C832 /* Assets.xcassets */,
+				99CB5A381D1E9A090016C832 /* LaunchScreen.storyboard */,
+				99CB5A3B1D1E9A090016C832 /* Info.plist */,
+			);
+			path = "netology-vacancy";
+			sourceTree = "<group>";
+		};
+		99CB5A431D1E9A090016C832 /* netology-vacancyTests */ = {
+			isa = PBXGroup;
+			children = (
+				99CB5A461D1E9A090016C832 /* Info.plist */,
+				9975F3541D205E2100B3F3DB /* BooksListTableViewControllerTests.swift */,
+			);
+			path = "netology-vacancyTests";
+			sourceTree = "<group>";
+		};
+		99CB5A4E1D1E9A090016C832 /* netology-vacancyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				99CB5A4F1D1E9A090016C832 /* netology_vacancyUITests.swift */,
+				99CB5A511D1E9A090016C832 /* Info.plist */,
+			);
+			path = "netology-vacancyUITests";
+			sourceTree = "<group>";
+		};
+		99CB5A5D1D1E9D9F0016C832 /* BooksList */ = {
+			isa = PBXGroup;
+			children = (
+				99CB5A5E1D1E9E570016C832 /* BooksListTableViewController.swift */,
+				99CB5A621D1EA88D0016C832 /* BooksListDataProvider.swift */,
+			);
+			name = BooksList;
+			sourceTree = "<group>";
+		};
+		99CB5A641D1EA9850016C832 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				99CB5A711D1EC34A0016C832 /* Manipulation */,
+				99CB5A701D1EC33A0016C832 /* Model */,
+				99CB5A331D1E9A090016C832 /* netology_vacancy.xcdatamodeld */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		99CB5A651D1EA9A20016C832 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9975F3561D20993200B3F3DB /* BookDetalisation */,
+				99CB5A5D1D1E9D9F0016C832 /* BooksList */,
+				9975F35B1D21CC7D00B3F3DB /* BooksSplitViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		99CB5A681D1EB5290016C832 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				99CB5A661D1EB2A50016C832 /* Book.swift */,
+				99CB5A691D1EB53E0016C832 /* BookFabric.swift */,
+			);
+			name = Book;
+			sourceTree = "<group>";
+		};
+		99CB5A6B1D1EB9600016C832 /* Author */ = {
+			isa = PBXGroup;
+			children = (
+				99CB5A6C1D1EB9750016C832 /* Author.swift */,
+				99CB5A6E1D1EBBFE0016C832 /* AuthorsFabric.swift */,
+			);
+			name = Author;
+			sourceTree = "<group>";
+		};
+		99CB5A701D1EC33A0016C832 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99CB5A6B1D1EB9600016C832 /* Author */,
+				99CB5A681D1EB5290016C832 /* Book */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		99CB5A711D1EC34A0016C832 /* Manipulation */ = {
+			isa = PBXGroup;
+			children = (
+				99CB5A731D1EC3C30016C832 /* Facades */,
+				99CB5A721D1EC3BC0016C832 /* Parsers */,
+				99FEC7441D1ED5C200EC52EF /* APIWrapper.swift */,
+			);
+			name = Manipulation;
+			sourceTree = "<group>";
+		};
+		99CB5A721D1EC3BC0016C832 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				99FEC7541D1F160500EC52EF /* Books */,
+			);
+			name = Parsers;
+			sourceTree = "<group>";
+		};
+		99CB5A731D1EC3C30016C832 /* Facades */ = {
+			isa = PBXGroup;
+			children = (
+				99FEC74F1D1EF4EE00EC52EF /* Books */,
+			);
+			name = Facades;
+			sourceTree = "<group>";
+		};
+		99CB5A741D1EC9FD0016C832 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				99CB5A601D1EA5520016C832 /* TableViewDataProviderProtocol.swift */,
+				99FEC74B1D1EE3BF00EC52EF /* EntityFacadeProtocol.swift */,
+				99FEC7521D1F0F2100EC52EF /* ConcreteParserProtocol.swift */,
+				99FEC74D1D1EE5E200EC52EF /* CoreDataDownloadAndInsertOperation.swift */,
+				9975F3591D21C6CF00B3F3DB /* BookDetalisationProtocol.swift */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		99FEC7461D1ED8EF00EC52EF /* Helper files */ = {
+			isa = PBXGroup;
+			children = (
+				9975F3511D201BA500B3F3DB /* netology-vacancy-Bridging-Header.h */,
+				99FEC7471D1ED90500EC52EF /* Constants.swift */,
+				99FEC7501D1EF92100EC52EF /* NSDictionaryUtils.swift */,
+				9975F34A1D1FEE3300B3F3DB /* CalendarUtils.swift */,
+			);
+			name = "Helper files";
+			sourceTree = "<group>";
+		};
+		99FEC74F1D1EF4EE00EC52EF /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				99FEC7491D1EDED700EC52EF /* BooksFacade.swift */,
+			);
+			name = Books;
+			sourceTree = "<group>";
+		};
+		99FEC7541D1F160500EC52EF /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				99FEC7551D1F161D00EC52EF /* BooksConcreteParser.swift */,
+			);
+			name = Books;
+			sourceTree = "<group>";
+		};
+		BF8EA9F133849ABF1F3D2254 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56265432836ABBEB50BEBA31 /* Pods-netology-vacancy.debug.xcconfig */,
+				6B858CE6C0002A9366A256A0 /* Pods-netology-vacancy.release.xcconfig */,
+				78E85FB8C34EE32CF6A8C726 /* Pods-netology-vacancyTests.debug.xcconfig */,
+				B4A26C565DB169B3E119E5CF /* Pods-netology-vacancyTests.release.xcconfig */,
+				441B4B459B8CA99D6DB4BB8E /* Pods-netology-vacancyUITests.debug.xcconfig */,
+				CEB7C0A75A4D1EE9637C363D /* Pods-netology-vacancyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99CB5A281D1E9A090016C832 /* netology-vacancy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99CB5A541D1E9A090016C832 /* Build configuration list for PBXNativeTarget "netology-vacancy" */;
+			buildPhases = (
+				BAFC346B2C2289140202ABF4 /* [CP] Check Pods Manifest.lock */,
+				99CB5A251D1E9A090016C832 /* Sources */,
+				99CB5A261D1E9A090016C832 /* Frameworks */,
+				99CB5A271D1E9A090016C832 /* Resources */,
+				A3742527A5150086A4A18512 /* [CP] Embed Pods Frameworks */,
+				4EFFD1811E88055945EB0742 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "netology-vacancy";
+			productName = "netology-vacancy";
+			productReference = 99CB5A291D1E9A090016C832 /* netology-vacancy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99CB5A3F1D1E9A090016C832 /* netology-vacancyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99CB5A571D1E9A090016C832 /* Build configuration list for PBXNativeTarget "netology-vacancyTests" */;
+			buildPhases = (
+				E4B3DC7A23A69F71D811EC88 /* [CP] Check Pods Manifest.lock */,
+				99CB5A3C1D1E9A090016C832 /* Sources */,
+				99CB5A3D1D1E9A090016C832 /* Frameworks */,
+				99CB5A3E1D1E9A090016C832 /* Resources */,
+				52E28D9FBD0698AAAEF03A85 /* [CP] Embed Pods Frameworks */,
+				C59A05FC6B7E02826192AD25 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99CB5A421D1E9A090016C832 /* PBXTargetDependency */,
+			);
+			name = "netology-vacancyTests";
+			productName = "netology-vacancyTests";
+			productReference = 99CB5A401D1E9A090016C832 /* netology-vacancyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99CB5A4A1D1E9A090016C832 /* netology-vacancyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99CB5A5A1D1E9A090016C832 /* Build configuration list for PBXNativeTarget "netology-vacancyUITests" */;
+			buildPhases = (
+				444C3191E3A27AD9403B857A /* [CP] Check Pods Manifest.lock */,
+				99CB5A471D1E9A090016C832 /* Sources */,
+				99CB5A481D1E9A090016C832 /* Frameworks */,
+				99CB5A491D1E9A090016C832 /* Resources */,
+				7D5229BD6DEF60F425B7F82A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99CB5A4D1D1E9A090016C832 /* PBXTargetDependency */,
+			);
+			name = "netology-vacancyUITests";
+			productName = "netology-vacancyUITests";
+			productReference = 99CB5A4B1D1E9A090016C832 /* netology-vacancyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99CB5A211D1E9A090016C832 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "George Zinyakov";
+				TargetAttributes = {
+					99CB5A281D1E9A090016C832 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					99CB5A3F1D1E9A090016C832 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 99CB5A281D1E9A090016C832;
+					};
+					99CB5A4A1D1E9A090016C832 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 99CB5A281D1E9A090016C832;
+					};
+				};
+			};
+			buildConfigurationList = 99CB5A241D1E9A090016C832 /* Build configuration list for PBXProject "netology-vacancy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99CB5A201D1E9A090016C832;
+			productRefGroup = 99CB5A2A1D1E9A090016C832 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99CB5A281D1E9A090016C832 /* netology-vacancy */,
+				99CB5A3F1D1E9A090016C832 /* netology-vacancyTests */,
+				99CB5A4A1D1E9A090016C832 /* netology-vacancyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99CB5A271D1E9A090016C832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9975F34E1D20186700B3F3DB /* BookTableViewCell.xib in Resources */,
+				99CB5A3A1D1E9A090016C832 /* LaunchScreen.storyboard in Resources */,
+				99CB5A371D1E9A090016C832 /* Assets.xcassets in Resources */,
+				99CB5A321D1E9A090016C832 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CB5A3E1D1E9A090016C832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CB5A491D1E9A090016C832 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		444C3191E3A27AD9403B857A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4EFFD1811E88055945EB0742 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-netology-vacancy/Pods-netology-vacancy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52E28D9FBD0698AAAEF03A85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-netology-vacancyTests/Pods-netology-vacancyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D5229BD6DEF60F425B7F82A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-netology-vacancyUITests/Pods-netology-vacancyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3742527A5150086A4A18512 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-netology-vacancy/Pods-netology-vacancy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAFC346B2C2289140202ABF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C59A05FC6B7E02826192AD25 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-netology-vacancyTests/Pods-netology-vacancyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4B3DC7A23A69F71D811EC88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99CB5A251D1E9A090016C832 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CB5A6F1D1EBBFE0016C832 /* AuthorsFabric.swift in Sources */,
+				99FEC7481D1ED90500EC52EF /* Constants.swift in Sources */,
+				99CB5A351D1E9A090016C832 /* netology_vacancy.xcdatamodeld in Sources */,
+				9975F34B1D1FEE3300B3F3DB /* CalendarUtils.swift in Sources */,
+				99CB5A631D1EA88D0016C832 /* BooksListDataProvider.swift in Sources */,
+				99FEC74E1D1EE5E200EC52EF /* CoreDataDownloadAndInsertOperation.swift in Sources */,
+				9975F3581D20998900B3F3DB /* BookDetalisationViewController.swift in Sources */,
+				99FEC74C1D1EE3BF00EC52EF /* EntityFacadeProtocol.swift in Sources */,
+				99CB5A6D1D1EB9750016C832 /* Author.swift in Sources */,
+				9975F3501D2019DB00B3F3DB /* BookTableViewCell.swift in Sources */,
+				9975F35C1D21CC7D00B3F3DB /* BooksSplitViewController.swift in Sources */,
+				99CB5A671D1EB2A50016C832 /* Book.swift in Sources */,
+				99CB5A5F1D1E9E570016C832 /* BooksListTableViewController.swift in Sources */,
+				99FEC7531D1F0F2100EC52EF /* ConcreteParserProtocol.swift in Sources */,
+				99FEC7451D1ED5C200EC52EF /* APIWrapper.swift in Sources */,
+				99CB5A6A1D1EB53E0016C832 /* BookFabric.swift in Sources */,
+				99FEC7511D1EF92100EC52EF /* NSDictionaryUtils.swift in Sources */,
+				99CB5A611D1EA5520016C832 /* TableViewDataProviderProtocol.swift in Sources */,
+				99FEC74A1D1EDED700EC52EF /* BooksFacade.swift in Sources */,
+				99FEC7561D1F161D00EC52EF /* BooksConcreteParser.swift in Sources */,
+				99CB5A2D1D1E9A090016C832 /* AppDelegate.swift in Sources */,
+				9975F35A1D21C6CF00B3F3DB /* BookDetalisationProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CB5A3C1D1E9A090016C832 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9975F3551D205E2100B3F3DB /* BooksListTableViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CB5A471D1E9A090016C832 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CB5A501D1E9A090016C832 /* netology_vacancyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99CB5A421D1E9A090016C832 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99CB5A281D1E9A090016C832 /* netology-vacancy */;
+			targetProxy = 99CB5A411D1E9A090016C832 /* PBXContainerItemProxy */;
+		};
+		99CB5A4D1D1E9A090016C832 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99CB5A281D1E9A090016C832 /* netology-vacancy */;
+			targetProxy = 99CB5A4C1D1E9A090016C832 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99CB5A301D1E9A090016C832 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99CB5A311D1E9A090016C832 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99CB5A381D1E9A090016C832 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99CB5A391D1E9A090016C832 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99CB5A521D1E9A090016C832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99CB5A531D1E9A090016C832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99CB5A551D1E9A090016C832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56265432836ABBEB50BEBA31 /* Pods-netology-vacancy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = "netology-vacancy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zinyakov.netology-vacancy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "netology-vacancy/netology-vacancy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99CB5A561D1E9A090016C832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B858CE6C0002A9366A256A0 /* Pods-netology-vacancy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = "netology-vacancy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zinyakov.netology-vacancy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "netology-vacancy/netology-vacancy-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		99CB5A581D1E9A090016C832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78E85FB8C34EE32CF6A8C726 /* Pods-netology-vacancyTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "netology-vacancyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zinyakov.netology-vacancyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/netology-vacancy.app/netology-vacancy";
+			};
+			name = Debug;
+		};
+		99CB5A591D1E9A090016C832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4A26C565DB169B3E119E5CF /* Pods-netology-vacancyTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "netology-vacancyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zinyakov.netology-vacancyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/netology-vacancy.app/netology-vacancy";
+			};
+			name = Release;
+		};
+		99CB5A5B1D1E9A090016C832 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 441B4B459B8CA99D6DB4BB8E /* Pods-netology-vacancyUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "netology-vacancyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zinyakov.netology-vacancyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "netology-vacancy";
+			};
+			name = Debug;
+		};
+		99CB5A5C1D1E9A090016C832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEB7C0A75A4D1EE9637C363D /* Pods-netology-vacancyUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "netology-vacancyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Zinyakov.netology-vacancyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "netology-vacancy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99CB5A241D1E9A090016C832 /* Build configuration list for PBXProject "netology-vacancy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CB5A521D1E9A090016C832 /* Debug */,
+				99CB5A531D1E9A090016C832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99CB5A541D1E9A090016C832 /* Build configuration list for PBXNativeTarget "netology-vacancy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CB5A551D1E9A090016C832 /* Debug */,
+				99CB5A561D1E9A090016C832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99CB5A571D1E9A090016C832 /* Build configuration list for PBXNativeTarget "netology-vacancyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CB5A581D1E9A090016C832 /* Debug */,
+				99CB5A591D1E9A090016C832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99CB5A5A1D1E9A090016C832 /* Build configuration list for PBXNativeTarget "netology-vacancyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99CB5A5B1D1E9A090016C832 /* Debug */,
+				99CB5A5C1D1E9A090016C832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		99CB5A331D1E9A090016C832 /* netology_vacancy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				99CB5A341D1E9A090016C832 /* netology_vacancy.xcdatamodel */,
+			);
+			currentVersion = 99CB5A341D1E9A090016C832 /* netology_vacancy.xcdatamodel */;
+			path = netology_vacancy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 99CB5A211D1E9A090016C832 /* Project object */;
+}

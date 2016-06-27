@@ -1,0 +1,6 @@
+framework module Pods_netology_vacancyUITests {
+  umbrella header "Pods-netology-vacancyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
